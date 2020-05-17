@@ -1,0 +1,29 @@
+body{
+  margin:0px;
+  padding: 0px;
+  font-family: Lato, sans-serif;
+}
+
+
+.button {
+  padding: 8px;
+  background-color: yellow;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+h1 {
+  background-color: #223B47;
+  color: white;
+  padding: 15px;
+}
+
+
+
+p, h2, h3, div, textarea {
+  margin: 5px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<title>Home</title>
+
+	<link rel="stylesheet" type="text/css" href="/static/styles.css">
+
+</head>
+
+<body>
+
+  <header>
+
+		<h1>Satire Detector</h1>
+
+
+	</header>
+
+  <main>
+		<br>
+
+		<p><strong>Enter a headline below and my model will predict if is a satirical headline or not.</strong></p>
+
+		<br>
+
+   <form action="{{ url_for('result')}}" method="POST">
+
+		<p>Enter Your Text Here</p>
+
+		<textarea name="message" rows="4" cols="50"></textarea>
+
+		<br/>
+
+    <input type="submit" class="button" value="Predict">
+
+		</form>
+
+	</main>
+
+
+</body>
+</html>

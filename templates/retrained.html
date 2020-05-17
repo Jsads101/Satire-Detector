@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Satire Detector</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Satire Detector</h1>
+
+	</header>
+
+<main>
+  <h2>Thank you for retraining my model</h2>
+	<br>
+
+	<div class="results">
+
+		<p>The new accuracy score for the model is:  <strong>{{accuracy}}</strong></p>
+		<br>
+    <p>The new f1 score for the model is:  <strong>{{f1}}</strong></p>
+		<br>
+
+		<div>
+				<form action="/">
+					<input type=submit value='Submit another text' class="button">
+				</form>
+		</div>
+
+</main>
+
+</body>
+
+</html>

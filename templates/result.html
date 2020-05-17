@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Satire Detector</title>
+  <link rel="stylesheet" type="text/css" href="/static/styles.css">
+
+</head>
+
+<body>
+
+	<header>
+
+		<h1>Satire Detector</h1>
+
+	</header>
+
+<main>
+  <h2>Results</h2>
+	<br>
+
+
+	<div class="results">
+		<h3>Your text:</h3>
+    <div>{{ content }}</div>
+		<br>
+		<h3>Prediction:</h3>
+		<p>My model predicts that this text is <strong>{{ prediction }}</strong>. The probability this prediction is correct is: {{ probability }}%.</p>
+    <br>
+		<p>Help me improve my model by telling me if this prediction is Correct or Incorrect:</p>
+		<br>
+		<div>
+				<form action="/thanks" method="post">
+					<input type=submit value='Correct' name='feedback_button' class='button'>
+					<input type=submit value='Incorrect' name='feedback_button' class='button'>
+					<input type=hidden value='{{ prediction }}' name='prediction'>
+					<input type=hidden value='{{ content }}' name='userinput'>
+				</form>
+		</div>
+
+		<div>
+				<form action="/">
+					<input type=submit value='Submit another text' class='button'>
+				</form>
+		</div>
+
+</main>
+
+</body>
+
+</html>

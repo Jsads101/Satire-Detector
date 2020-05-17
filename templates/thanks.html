@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Satire Detector</title>
+	<link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+
+<body>
+	<br>
+	<h2>Thank you for your feedback!</h2>
+	<br>
+	<h3>Would you like to submit another text and get another prediction?</h3>
+	<div>
+		<form action="/">
+			<input type=submit value='Submit another text' class="button">
+		</form>
+	</div>
+	<br>
+	<div>
+		<h3>Or would you like to retrain my prediction model? (recommended 10 predictions before you re-train model)</h3>
+		<form action="/retrain" method='POST'>
+			<input type=submit value='Re-train Model Please!' name="retrain" class="button">
+		</form>
+	</div>
+</body>
+
+</html>
